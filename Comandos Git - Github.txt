@@ -1,4 +1,5 @@
   ========== GITHUB A GIT (ubuntu o desde el bash de git en windows) ============
+  
   Como clonar repositorio de github a git:
   . Abrimos la terminal y nos posicionamos en la carpeta donde queremos que este el repositorio y tipeamos
   . git clone direccionDelRepositorioEnGithub
@@ -7,15 +8,17 @@
   . Con git branch nombredDeRama  --> creamos una rama, para posicionarnos en esta rama hacemos
   . git checkout nombreDeRama     --> una vez posicionados en la rama desde la terminal podemos trabajar en ella
   
-  Despues de hacer los cambios en el codigo podemos subir el progreso con
+  Luego de hacer hacer los cambios en el codigo
+  . git status      --> Vemos los cambios hechos en la rama
+  . git add.        --> Preparamos los archivos y los enviamos al staged area, si los queremos sacar (//)
+  . git commit -m "mensaje de descripcion"   --> confirmamos los cambios
+ 
+  . git push        --> Subimos los cambios la rama creada (y en la que estamos) en Github
   . git push --set-upstream origin nombreDeRama   --> esto es en el caso de no tener una rama ya creada en Github
-  . git push        --> En el caso de que ya tengamos la rama creada en Github
 
   Comandos Varios:
-  . git status      --> Nos indica los cambios hechos dentro de la rama
-  . git add.        --> Preparamos los archivos y los enviamos al staged area, si los queremos sacar tipeamos
-  . git restore --staged .      --> Cabe aclarar que con "." agregamos todos los archivos. Si queremos solo preparar uno ponemos su nombre
-  . git commit -m "mensaje de descripcion"
-  . git pull origin main    --> Bajamos los cambios de la rama main
+      . git status      --> Nos indica los cambios hechos dentro de la rama
+  (//). git restore --staged .      --> Cabe aclarar que con "." agregamos todos los archivos. Si queremos solo preparar uno ponemos su nombre
+      . git pull origin main    --> Bajamos los cambios de la rama main
   
-  NOTA: Antes de comenzar a trabajar en el codigo nos conviene hacer un PULL desde la rama MAIN. Una vez hecho esto comenzamos a trabajar
+  NOTA: Antes de comenzar a trabajar en el codigo nos conviene hacer un PULL desde la rama MAIN. Una vez hecho esto comenzamos a trabajar.
